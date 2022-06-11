@@ -19,11 +19,20 @@ public class MainMenuPane extends JPanel {
                 startGameButtonActionPerformed(e);
             }
         });
+        quitGameButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                quitGameButtonActionPerformed(e);
+            }
+        });
     }
 
     private void startGameButtonActionPerformed(java.awt.event.ActionEvent evt) {
-        this.setVisible(false);
         Tetris.start();
+    }
+
+    private void quitGameButtonActionPerformed(java.awt.event.ActionEvent evt) {
+        System.exit(0);
     }
 
     public static void main(String args[])

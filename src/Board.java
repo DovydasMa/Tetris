@@ -11,11 +11,10 @@ public class Board extends JPanel
 
     public Board()
     {
-
-
-        this.setBounds(40, 20, 500, 500);
+        this.setBounds(0, 0, 500, 500);
         this.setBackground(Color.black);
         this.setBorder(BorderFactory.createLineBorder(Color.black));
+
 
         setGridColumns(10);
         setGridCellSize(this.getBounds().width / getGridColumns());

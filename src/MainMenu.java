@@ -6,9 +6,9 @@ public class MainMenu extends JFrame {
 
     public MainMenu()
     {
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         this.setLayout(null);
-        this.setMinimumSize(new Dimension(600, 600));
+        this.setMinimumSize(new Dimension(800, 600));
         menu = new MainMenuPane();
         setContentPane(menu);
     }
